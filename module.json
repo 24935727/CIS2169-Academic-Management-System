@@ -1,7 +1,6 @@
 {
   "undergraduate": [
     {
-      "Name": "Undergraduate",
       "Course": "Web Development",
       "Module": {
         "Learning_outcomes": [

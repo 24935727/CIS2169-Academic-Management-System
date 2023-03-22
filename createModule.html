@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="createModule.html">Create Module</a></li>
+    </nav>
+    <form id="form">
+        <label for="">Module Idenfication Code</label>
+        <input type="number" name="moduleIDCode" placeholder="Indentification Code">
+        <label for="">Module Name</label>
+        <input type="text" name="moduleName" placeholder="Module Name">
+        <label for="">Number of hours</label>
+        <input type="number" name="hours" placeholder="Number of hours">
+        <label for="">Number of credits</label>
+        <input type="number" name="credits" placeholder="Number of credits">
+        <button type="button" onclick="addNewField()">Add assessment</button>
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    
+    <script src="module.js"></script>
+</body>
+</html>
