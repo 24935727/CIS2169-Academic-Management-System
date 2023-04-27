@@ -1,0 +1,73 @@
+{
+  "module": [
+    {
+      "id": "1",
+      "course": "Web development",
+      "name": "Fundamentals of web coding",
+      "module-code": "CIS2152",
+      "number-of-hours": "8",
+      "learning-outcomes": [
+        "LO1",
+        "LO2"
+      ],
+      "volume": [
+        "1000 words",
+        "2000 words"
+      ],
+      "weights": [
+        "20%",
+        "80%"
+      ]
+    }
+  ],
+  "academic": [
+    {
+      "id": "1",
+      "name": "dave",
+      "field-of-study": "Web",
+      "modules-covered": [
+        "Fundamentals of web coding",
+        "UX design"
+      ]
+    },
+    {
+      "name": "ben",
+      "field-of-study": "business",
+      "modules-covered": "CIS2169",
+      "id": "LMYJIPI"
+    },
+    {
+      "name": "dave",
+      "field-of-study": "web dev",
+      "modules-covered": "Server Side Scripting",
+      "id": "Ll2i6DO"
+    },
+    {
+      "name": "dave",
+      "field-of-study": "Web",
+      "modules-covered": "Server Side Scripting",
+      "id": "Kv33sUk"
+    }
+  ],
+  "degree": [
+    {
+      "id": "1",
+      "name": "undergrad"
+    }
+  ],
+  "room": [
+    {
+      "id": "1",
+      "number": "1",
+      "building": "Tech Hub"
+    }
+  ],
+  "room-booking": [
+    {
+      "id": "1",
+      "moduleName": "web development",
+      "room-number": "1",
+      "date": "08:00"
+    }
+  ]
+}

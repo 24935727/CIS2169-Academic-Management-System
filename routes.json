@@ -1,6 +1,7 @@
 {
-    "/undergraduate/": "/undergraduate?q=",
-    "/undergraduate/course/:course": "/undergraduate?course=:course",
-    "/pokemon/name/:name": "/pokemon?name=:name",
-    "/pokemon/type/:type": "/pokemon?type_like=:type"
+    "/module/": "/module?q=", 
+    "/academic/" : "/academic",
+    "/degree/" : "/degree",
+    "/room/" : "/room",
+    "/room-booking/" : "/room-booking"
 }

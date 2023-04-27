@@ -24,7 +24,6 @@
   ],
   "post-graduate": [
     {
-      "Name": "Post-Graduate",
       "Course": "Big Data",
       "Module": {
         "Learning_outcomes": [
@@ -48,7 +47,6 @@
   ],
   "research": [
     {
-      "Name": "Research",
       "Course": "Data Mining",
       "Module": {
         "Learning_outcomes": [
@@ -70,4 +68,5 @@
       }
     }
   ]
+
 }
