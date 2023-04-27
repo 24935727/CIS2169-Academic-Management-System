@@ -1,7 +1,7 @@
 const moduleDropdown = document.querySelector('.moduleSelect');
 
 const renderPosts = async () => {
-  let uri = 'http://localhost:3000/room';
+  let uri = 'http://localhost:80/room';
 
   const response = await fetch(uri);
   const posts = await response.json();

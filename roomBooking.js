@@ -4,7 +4,7 @@ const moduleContainer = document.getElementById('moduleName');
 const academicContainer = document.getElementById('academicSelect');
 
 const renderModule = async () => {
-    let uri = 'http://localhost:3000/module'
+    let uri = 'http://localhost:80/module'
     response = await fetch(uri);
     const posts = await response.json();
   let template = '';
@@ -20,7 +20,7 @@ const renderModule = async () => {
 }
 const renderRooms = async () => {
 
-  const response = await fetch('http://localhost:3000/room');
+  const response = await fetch('http://localhost:80/room');
   const posts = await response.json();
   let i = 0;
   let template = '';
@@ -34,7 +34,7 @@ const renderRooms = async () => {
 };
 const renderAcademics = async () => {
 
-  const response = await fetch('http://localhost:3000/academic');
+  const response = await fetch('http://localhost:80/academic');
   const posts = await response.json();
   let i = 0;
   let template = '';
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => renderModule(), renderRooms(),
       "timeslot": form.timeslot.value
       
     }
-    await fetch('http://localhost:3000/room-booking', {
+    await fetch('http://localhost:80/room-booking', {
       method: 'POST',
       body: JSON.stringify(roomBookingPost),
       headers: {'content-type': 'application/json'}

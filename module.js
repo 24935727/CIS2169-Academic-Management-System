@@ -64,7 +64,7 @@ const createPost = async (e) => {
 
   }
 
-  await fetch('http://localhost:3000/module', {
+  await fetch('http://localhost:80/module', {
     method: 'POST',
     body: JSON.stringify(modulePost),
     headers: { 'content-type': 'application/json' }

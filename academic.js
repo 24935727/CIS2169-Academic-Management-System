@@ -8,7 +8,7 @@ const createPost = async (e) => {
       "field-of-study": academicForm.fieldOfStudy.value,
       "modules-covered": academicForm.modulesCovered.value
     }
-    await fetch('/academic', {
+    await fetch('http://localhost:80/degree', {
       method: 'POST',
       body: JSON.stringify(academicPost),
       headers: {'content-type': 'application/json'}

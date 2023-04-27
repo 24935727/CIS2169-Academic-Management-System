@@ -28,7 +28,7 @@ const createPost = async (e) => {
         degreePost["learning-outcomes"].push(degreeForm[`LO${i+1}`].value);
       }
     console.log(degreePost);
-    await fetch('http://localhost:3000/degree', {
+    await fetch('http://localhost:80/degree', {
       method: 'POST',
       body: JSON.stringify(degreePost),
       headers: {'content-type': 'application/json'}
