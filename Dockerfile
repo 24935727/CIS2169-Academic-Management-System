@@ -13,6 +13,6 @@ ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-Syste
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/js/degree.js /data/public/
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/js/academic.js /data/public/
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/js/roomBooking.js /data/public/
-ADD https://raw.githubusercontent.com/24935727/Pokemon-Json-Server/main/style.css data/public/
+ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/style.css data/public/
 ENTRYPOINT ["json-server", "-w", "/data/data.json", "--routes", "/data/routes/routes.json","--port", "80"]
 # ENTRYPOINT ["json-server", "-w", "/data/data.json", "--routes","--port", "80"] 
