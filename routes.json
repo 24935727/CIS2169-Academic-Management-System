@@ -3,5 +3,6 @@
     "/users/" : "/users",
     "/degree/" : "/degree",
     "/room/" : "/room",
-    "/room-booking/" : "/room-booking"
+    "/room-booking/" : "/room-booking",
+    "/building" : "building"
 }
