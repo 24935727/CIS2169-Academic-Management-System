@@ -1,5 +1,5 @@
 const module_select = document.getElementById('module_select');
-const academic_select = document.getElementById('academic_select');
+const user_select = document.getElementById('user_select');
 const room_select = document.getElementById('room_select');
 const booking_form = document.getElementById('booking_form');
 const booked_table = document.getElementById('booked_table');
@@ -32,8 +32,8 @@ const render_module = async () => {
 
   module_select.insertAdjacentHTML('beforeend', template);
 }
-const render_academic = async () => {
-  const request = await fetch('http://localhost:80/academic');
+const render_user = async () => {
+  const request = await fetch('http://localhost:80/users');
   const response = await request.json();
   console.log(response);
   let template = "";
@@ -43,7 +43,7 @@ const render_academic = async () => {
     `
   })
 
-  academic_select.insertAdjacentHTML('beforeend', template);
+  user_select.insertAdjacentHTML('beforeend', template);
 }
 const render_room = async () => {
   const request = await fetch('http://localhost:80/room');
@@ -72,7 +72,7 @@ const createPost = async (e) => {
   const post = {
     "module_name" : booking_form.module_select.value,
     "room_number": booking_form.room_select.value,
-    "academic" : booking_form.academic_select.value,
+    "user" : booking_form.user_select.value,
     "building" : booking_form.building_select.value,
     "time": booking_form.timeslot.value,
   }
@@ -84,6 +84,6 @@ const createPost = async (e) => {
 }
 booking_form.addEventListener('submit', createPost)
 render_module();
-render_academic();
+render_user();
 render_room();
 addRow();
