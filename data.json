@@ -1,146 +1,26 @@
 {
   "module": [
     {
-      "id": "1",
-      "course": "Web development",
-      "name": "Fundamentals of web coding",
-      "module_code": "CIS2152",
+      "course": "Web Design And Development",
+      "name": "Web development",
+      "module_code": "CIS2169",
       "number_of_hours": "8",
+      "assessment": [
+        "CW2"
+      ],
       "learning_outcomes": [
-        "LO1",
-        "LO2"
+        "LO1"
       ],
       "volume": [
-        "1000 words",
-        "2000 words"
+        "2000"
       ],
-      "weights": [
-        "20%",
+      "weighting": [
         "80%"
-      ]
-    },
-    {
-      "id": "2",
-      "course": "Web development",
-      "name": "Fundamentals of web coding",
-      "module_code": "CIS2152",
-      "number_of_hours": "8",
-      "learning_outcomes": [
-        "LO1",
-        "LO2"
-      ],
-      "volume": [
-        "1000 words",
-        "2000 words"
-      ],
-      "weights": [
-        "20%",
-        "80%"
-      ]
-    },
-    {
-      "course": "test course",
-      "name": "test name",
-      "module_code": "test cod",
-      "number_of_hours": "8",
-      "id": "VUPG7lP"
-    },
-    {
-      "course": "test",
-      "name": "test",
-      "module_code": "test",
-      "number_of_hours": "test",
-      "assessment": [
-        "test"
-      ],
-      "learning_outcomes": [
-        "test"
-      ],
-      "volume": [
-        "test"
-      ],
-      "weighting": [
-        "test"
-      ]
-    },
-    {
-      "course": "Course 1",
-      "name": "Module 1",
-      "module_code": "",
-      "number_of_hours": "8",
-      "assessment": [
-        "Assessment 1"
-      ],
-      "learning_outcomes": [
-        "LO 1"
-      ],
-      "volume": [
-        "1000"
-      ],
-      "weighting": [
-        "30"
-      ],
-      "id": "VZc2SGu"
-    },
-    {
-      "course": "Course 2",
-      "name": "Module 2",
-      "module_code": "CIS2162",
-      "number_of_hours": "8",
-      "assessment": [
-        "Assessment 2"
-      ],
-      "learning_outcomes": [
-        "LO 2"
-      ],
-      "volume": [
-        "3000"
-      ],
-      "weighting": [
-        "50"
-      ],
-      "id": "g7rRIex"
-    },
-    {
-      "course": "test course",
-      "name": "test module",
-      "module_code": "module code 1",
-      "number_of_hours": "8",
-      "assessment": [
-        "assessment 1 "
-      ],
-      "learning_outcomes": [
-        "lo 1"
-      ],
-      "volume": [
-        "3000"
-      ],
-      "weighting": [
-        "50"
-      ],
-      "id": "GF9yLYg"
-    },
-    {
-      "course": "99",
-      "name": "999",
-      "module_code": "99",
-      "number_of_hours": "9",
-      "assessment": [
-        "9"
-      ],
-      "learning_outcomes": [
-        "9"
-      ],
-      "volume": [
-        "9"
-      ],
-      "weighting": [
-        "9"
       ],
       "submission_date": [
-        "99"
+        "2023-05-05"
       ],
-      "id": "acjMmkC"
+      "id": "kCnitXj"
     }
   ],
   "users": [
@@ -161,14 +41,6 @@
         "LO1",
         "LO2"
       ]
-    },
-    {
-      "name": "under graduate",
-      "degree_code": "2",
-      "learning_outcomes": [
-        "LO 1"
-      ],
-      "id": "QFQuJ7k"
     }
   ],
   "room": [
@@ -184,21 +56,6 @@
       "module_name": "web development",
       "room_number": "1",
       "time": "08:00"
-    },
-    {
-      "module_name": "Fundamentals of web coding",
-      "room_number": "1",
-      "academic": "dave",
-      "time": "9am",
-      "id": "Al_RnTv"
-    },
-    {
-      "module_name": "Fundamentals of web coding",
-      "room_number": "1",
-      "academic": "dave",
-      "building": "Tech Hub",
-      "time": "1pm",
-      "id": "fWnShCR"
     }
   ],
   "building": [
