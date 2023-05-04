@@ -1,6 +1,6 @@
 {
-    "/module/": "/module?q=", 
-    "/academic/" : "/academic",
+    "/module/": "/module", 
+    "/users/" : "/users",
     "/degree/" : "/degree",
     "/room/" : "/room",
     "/room-booking/" : "/room-booking"

@@ -1,70 +1,89 @@
-const form = document.getElementById("moduleForm");
-const container = document.getElementById('roomNumber');
-const moduleContainer = document.getElementById('moduleName');
-const academicContainer = document.getElementById('academicSelect');
-
-const renderModule = async () => {
-    let uri = 'http://localhost:80/module'
-    response = await fetch(uri);
-    const posts = await response.json();
-  let template = '';
-  posts.forEach(post =>{
-    
-    
-    
+const module_select = document.getElementById('module_select');
+const academic_select = document.getElementById('academic_select');
+const room_select = document.getElementById('room_select');
+const booking_form = document.getElementById('booking_form');
+const booked_table = document.getElementById('booked_table');
+const addRow = async () => {
+  const request = await fetch('http://localhost:80/room-booking');
+  const response = await request.json();
+  let template = "";
+  response.forEach(response => {
     template += `
-    <option value="${post.name}">${post.name}</option>
+    <tr>
+      <td>${response.room_number}</td>
+      <td>${response.module_name}</td>
+      <td>${response.time}</td>
+    </tr>
     `
   })
-  moduleContainer.innerHTML = template;
+  booked_table.insertAdjacentHTML('beforeend', template);
 }
-const renderRooms = async () => {
 
-  const response = await fetch('http://localhost:80/room');
-  const posts = await response.json();
-  let i = 0;
-  let template = '';
-  posts.forEach(post => {
-    i++
+const render_module = async () => {
+  const request = await fetch('http://localhost:80/module');
+  const response = await request.json();
+  console.log(response);
+  let template = "";
+  response.forEach(response => {
     template += `
-    <option value="room ${i}">${post.number}</option>
+    <option value="${response.name}">${response.name}</option>
     `
   })
-  container.innerHTML = template;
-};
-const renderAcademics = async () => {
 
-  const response = await fetch('http://localhost:80/academic');
-  const posts = await response.json();
-  let i = 0;
-  let template = '';
-  posts.forEach(post => {
-    i++
+  module_select.insertAdjacentHTML('beforeend', template);
+}
+const render_academic = async () => {
+  const request = await fetch('http://localhost:80/academic');
+  const response = await request.json();
+  console.log(response);
+  let template = "";
+  response.forEach(response => {
     template += `
-    <option value="${post.name}" ${i}">${post.name}</option>
+    <option value="${response.name}">${response.name}</option>
     `
   })
-  academicContainer.innerHTML = template;
-};
 
-window.addEventListener('DOMContentLoaded', () => renderModule(), renderRooms(), renderAcademics());
-
-
-  const createPost = async (e) => {
-    e.preventDefault();
+  academic_select.insertAdjacentHTML('beforeend', template);
+}
+const render_room = async () => {
+  const request = await fetch('http://localhost:80/room');
+  const response = await request.json();
+  console.log(response);
+  let template = "";
+  let building = "";
+  response.forEach(response => {
+    template += `
+    <option value="${response.number}">${response.number}</option>
+    `
+    building += `
+    <option value="${response.building}">${response.building}</option>
+    `
+  })
   
-    const roomBookingPost = {
-      "module-name" : form.moduleSelect.value,
-      "room": form.academicSelect.value,
-      "academic-name": form.academicSelect.value,
-      "timeslot": form.timeslot.value
-      
-    }
-    await fetch('http://localhost:80/room-booking', {
-      method: 'POST',
-      body: JSON.stringify(roomBookingPost),
-      headers: {'content-type': 'application/json'}
-    });
+
+  room_select.insertAdjacentHTML('beforeend', template);
+  building_select.insertAdjacentHTML('beforeend', building);
+}
+
+const createPost = async (e) => {
+  e.preventDefault();
+
+
+  const post = {
+    "module_name" : booking_form.module_select.value,
+    "room_number": booking_form.room_select.value,
+    "academic" : booking_form.academic_select.value,
+    "building" : booking_form.building_select.value,
+    "time": booking_form.timeslot.value,
   }
-  
-  form.addEventListener('submit', createPost);
+  await fetch('http://localhost:80/room-booking', {
+    method: 'POST',
+    body: JSON.stringify(post),
+    headers: {'content-type': 'application/json'}
+  });
+}
+booking_form.addEventListener('submit', createPost)
+render_module();
+render_academic();
+render_room();
+addRow();
