@@ -12,6 +12,8 @@ ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-Syste
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/degree.html /data/public/
 
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/building.js /data/public/
+ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/index.js /data/public/
+
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/module.js /data/public/
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/degree.js /data/public/
 ADD https://raw.githubusercontent.com/24935727/CIS2169-Academic-Management-System/main/registration.js /data/public/

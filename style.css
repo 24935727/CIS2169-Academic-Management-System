@@ -1,3 +1,4 @@
+/* Hides elements on the page */
 .hidden{
     display: none;
 }
